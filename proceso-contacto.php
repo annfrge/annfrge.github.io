@@ -19,7 +19,7 @@ function limpiarInput($campo) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6LcLDGEqAAAAAA7k-54UJDTt8MwnRDbnJK92soN2'; 
+    $recaptcha_secret = '****'; 
 
     if (!isset($_POST['recaptcha_response']) || empty($_POST['recaptcha_response'])) {
         echo json_encode(["success" => false, "message" => "Fallo en reCAPTCHA"]);
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host       = 'smtp.gmail.com';                      
         $mail->SMTPAuth   = true;                                 
         $mail->Username   = 'annfrge@gmail.com';         
-        $mail->Password   = 'bifn pidj mdrg suvs';                
+        $mail->Password   = '****';                
         $mail->SMTPSecure = 'ssl';                                 
         $mail->Port       = 465;                                 
 
