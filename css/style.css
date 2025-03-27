@@ -276,7 +276,7 @@ h2{
             height: 440px
         }
         .hero-wrapper {
-            margin-top: 300px;
+            margin-block: 150px 185px;
         }
         h1{
             font-size: 110px;
@@ -285,7 +285,7 @@ h2{
         
     } 
 }
-@media (min-width: 1200px){
+@media (min-width: 1400px){
     .hero-wrapper{
         margin-block: 240px 200px;
     }
